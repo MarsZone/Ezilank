@@ -6,4 +6,5 @@ Finished List
 5.solved Problem : Microsoft.VisualStudio.Debugger.Runtime.CrossThreadMessagingException.
 //
 Plan List
-1.
+1.还是用中文好了，反正都是些简单的句子。
+2.
