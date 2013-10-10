@@ -18,3 +18,10 @@ C:\360安全浏览器下载\EzilankSever\EzilankSever\obj\x86\Debug\EzilankSever
 C:\360安全浏览器下载\EzilankSever\EzilankSever\obj\x86\Debug\EzilankSever.csproj.GenerateResource.Cache
 C:\Users\john\Documents\GitHub\Ezilank\EzilankSever\EzilankSever\obj\x86\Debug\EzilankSever.exe
 C:\Users\john\Documents\GitHub\Ezilank\EzilankSever\EzilankSever\obj\x86\Debug\EzilankSever.pdb
+C:\Users\john\Documents\GitHub\Ezilank\EzilankSever\EzilankSever\bin\Debug\EzilankSever.exe
+C:\Users\john\Documents\GitHub\Ezilank\EzilankSever\EzilankSever\bin\Debug\EzilankSever.pdb
+C:\Users\john\Documents\GitHub\Ezilank\EzilankSever\EzilankSever\bin\Debug\MySql.Data.dll
+C:\Users\john\Documents\GitHub\Ezilank\EzilankSever\EzilankSever\obj\x86\Debug\EzilankSever.csprojResolveAssemblyReference.cache
+C:\Users\john\Documents\GitHub\Ezilank\EzilankSever\EzilankSever\obj\x86\Debug\EzilankSever.Form1.resources
+C:\Users\john\Documents\GitHub\Ezilank\EzilankSever\EzilankSever\obj\x86\Debug\EzilankSever.Properties.Resources.resources
+C:\Users\john\Documents\GitHub\Ezilank\EzilankSever\EzilankSever\obj\x86\Debug\EzilankSever.csproj.GenerateResource.Cache

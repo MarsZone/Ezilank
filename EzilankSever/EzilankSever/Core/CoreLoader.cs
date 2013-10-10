@@ -8,8 +8,8 @@ namespace EzilankSever.Core
 {
     class CoreLoader
     {
-         Dictionary<string, Player> PlayerDic = new Dictionary<string, Player>();
-         private ArrayList al;
+        
+        private ArrayList al;
         public CoreLoader()
         {
             InitPlayerDic();
@@ -42,7 +42,7 @@ namespace EzilankSever.Core
             p1.UserId = dc["UserId"];
             p1.AttMax = dc["AttMax"];
             p1.CurrExp = dc["CurrExp"];
-            PlayerDic.Add(p1.Id, p1);
+            ActivePlayerPool.addActivePlayer(p1.Id, p1);
         }
     }
 }
