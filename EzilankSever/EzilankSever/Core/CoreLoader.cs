@@ -28,7 +28,6 @@ namespace EzilankSever.Core
         }
         private void SetPlayer(Dictionary<string, string> dc)
         {
-           
             Dictionary<string, string> hs = al[0] as Dictionary<string, string>;
             Player p1 = new Player();
             p1.Id = dc["Id"];

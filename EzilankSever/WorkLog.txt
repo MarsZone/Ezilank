@@ -1,0 +1,3 @@
+1.MainPanel Done 
+2.Connect to mysql Done 
+3.Load Player Infor Done
