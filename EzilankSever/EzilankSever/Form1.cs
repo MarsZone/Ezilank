@@ -6,17 +6,23 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-
+using EzilankSever.Core;
 namespace EzilankSever
 {
     public partial class Form1 : Form
     {
+        private CoreLoader _coreloader;
         public Form1()
         {
             InitializeComponent();
             panel1.Hide();
+            InitCL();
         }
 
+        private void InitCL()
+        {
+            _coreloader = new CoreLoader();
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             panel1.Hide();

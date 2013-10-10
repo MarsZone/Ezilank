@@ -7,3 +7,14 @@ c:\users\user\documents\visual studio 2010\Projects\EzilankSever\EzilankSever\ob
 c:\users\user\documents\visual studio 2010\Projects\EzilankSever\EzilankSever\obj\x86\Debug\EzilankSever.pdb
 C:\Users\User\documents\visual studio 2010\Projects\EzilankSever\EzilankSever\bin\Debug\MySql.Data.dll
 C:\Users\User\documents\visual studio 2010\Projects\EzilankSever\EzilankSever\obj\x86\Debug\EzilankSever.csprojResolveAssemblyReference.cache
+C:\360安全浏览器下载\EzilankSever\EzilankSever\obj\x86\Debug\EzilankSever.exe
+C:\360安全浏览器下载\EzilankSever\EzilankSever\obj\x86\Debug\EzilankSever.pdb
+C:\360安全浏览器下载\EzilankSever\EzilankSever\bin\Debug\EzilankSever.exe
+C:\360安全浏览器下载\EzilankSever\EzilankSever\bin\Debug\EzilankSever.pdb
+C:\360安全浏览器下载\EzilankSever\EzilankSever\bin\Debug\MySql.Data.dll
+C:\360安全浏览器下载\EzilankSever\EzilankSever\obj\x86\Debug\EzilankSever.csprojResolveAssemblyReference.cache
+C:\360安全浏览器下载\EzilankSever\EzilankSever\obj\x86\Debug\EzilankSever.Form1.resources
+C:\360安全浏览器下载\EzilankSever\EzilankSever\obj\x86\Debug\EzilankSever.Properties.Resources.resources
+C:\360安全浏览器下载\EzilankSever\EzilankSever\obj\x86\Debug\EzilankSever.csproj.GenerateResource.Cache
+C:\Users\john\Documents\GitHub\Ezilank\EzilankSever\EzilankSever\obj\x86\Debug\EzilankSever.exe
+C:\Users\john\Documents\GitHub\Ezilank\EzilankSever\EzilankSever\obj\x86\Debug\EzilankSever.pdb

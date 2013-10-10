@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using MySql.Data.MySqlClient;
 using System.Windows.Forms;
-
+using System.Collections;
+using System.Data;
 namespace EzilankSever
 {
     class DBConnect
@@ -140,16 +141,14 @@ namespace EzilankSever
         }
 
         //Select statement
-        public List <string> [] Select()
+        public ArrayList SelectPlayer()
         {
             string query = "SELECT * FROM player";
 
             //Create a list to store the result
-            List<string>[] list = new List<string>[3];
-            list[0] = new List<string>();
-            list[1] = new List<string>();
-            list[2] = new List<string>();
-
+            ArrayList list=new ArrayList();
+            
+           //list[0] = new List<string>();//ID
             //Open connection
             if (this.OpenConnection() == true)
             {
@@ -157,18 +156,23 @@ namespace EzilankSever
                 MySqlCommand cmd = new MySqlCommand(query, connection);
                 //Create a data reader and Execute the command
                 MySqlDataReader dataReader = cmd.ExecuteReader();
-
                 //Read the data and store them in the list
                 while (dataReader.Read())
                 {
-                    //list[0].Add(dataReader["Id"] + "");
-                    //list[1].Add(dataReader["Name"] + "");
-                   // list[2].Add(dataReader["Level"] + "");
-                    Console.WriteLine(dataReader["Id"] + "");
-                    Console.WriteLine(dataReader["Name"] + "");
-                    Console.WriteLine(dataReader["Level"] + "");
-                }
+                    int i = 0;
+                    Dictionary<string, string> filelist = new Dictionary<string, string>();
 
+                    while (i<dataReader.FieldCount)
+                    {
+                       filelist.Add(dataReader.GetName(i), dataReader[i] + "");
+                        i++;
+                    }
+                    //Console.WriteLine(dataReader["Id"] + "");
+                    //Console.WriteLine(dataReader["Name"] + "");
+                    //Console.WriteLine(dataReader["Level"] + "");
+                    list.Add(filelist);
+                }
+                
                 //close Data Reader
                 dataReader.Close();
 
