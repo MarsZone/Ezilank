@@ -3,6 +3,7 @@ Finished List
 2.Connect to mysql -done 
 3.Load Player Infor -done
 4.Save the Player Infor -done
+5.solved Problem : Microsoft.VisualStudio.Debugger.Runtime.CrossThreadMessagingException.
 //
 Plan List
 1.
