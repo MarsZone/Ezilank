@@ -1,3 +1,8 @@
-1.MainPanel Done 
-2.Connect to mysql Done 
-3.Load Player Infor Done
+Finished List
+1.MainPanel -done 
+2.Connect to mysql -done 
+3.Load Player Infor -done
+4.Save the Player Infor -done
+//
+Plan List
+1.
