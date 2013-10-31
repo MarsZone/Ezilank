@@ -1,0 +1,115 @@
+-- phpMyAdmin SQL Dump
+-- version 4.0.5
+-- http://www.phpmyadmin.net
+--
+-- 主机: localhost
+-- 生成日期: 2013 年 10 月 31 日 04:29
+-- 服务器版本: 5.6.11-log
+-- PHP 版本: 5.4.14
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- 数据库: `ezilank`
+--
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `list`
+--
+
+CREATE TABLE IF NOT EXISTS `list` (
+  `user` varchar(90) CHARACTER SET gb2312 DEFAULT NULL,
+  `addtime` varchar(30) CHARACTER SET gb2312 DEFAULT NULL,
+  `content` blob
+) ENGINE=InnoDB DEFAULT CHARSET=gb2312 COLLATE=gb2312_bin;
+
+--
+-- 转存表中的数据 `list`
+--
+
+INSERT INTO `list` (`user`, `addtime`, `content`) VALUES
+('水电费', '1377070762', 0xe6b0b4e794b5e8b4b9),
+('水电费', '1377070771', 0xe88d89e59cb0e4b88a),
+('v大是', '1377071031', 0xe6b0b4e794b5e8b4b9e69292e79a84e6b395e5ae9ae694bee58187e69292e68ab5e68a97e58a9be58f91e79a84e8baabe4bbbde58da1e68b89e696afe6b0b4e794b5e8b4b9e5b0b1e79da1e4ba86e5bc80e58f91e68ea5e58fa3e79a84e99bb6e594aee4bbb7e58f91e694bee5bfabe98092e694b6e58f91);
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `npc`
+--
+
+CREATE TABLE IF NOT EXISTS `npc` (
+  `Id` int(11) NOT NULL AUTO_INCREMENT,
+  `Name` char(40) CHARACTER SET gb2312 NOT NULL,
+  `Hp` int(11) NOT NULL,
+  `Mana` int(11) NOT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `player`
+--
+
+CREATE TABLE IF NOT EXISTS `player` (
+  `Id` int(11) NOT NULL AUTO_INCREMENT,
+  `Name` char(40) CHARACTER SET gb2312 NOT NULL,
+  `Level` int(11) NOT NULL,
+  `AttMin` int(11) NOT NULL,
+  `AttMax` int(11) NOT NULL,
+  `Hp` int(11) NOT NULL,
+  `ManaMax` int(11) NOT NULL,
+  `ManaCurrent` int(11) NOT NULL,
+  `Money` int(11) NOT NULL,
+  `Alive` int(11) NOT NULL COMMENT '0死亡，1存活。',
+  `Point` int(11) NOT NULL,
+  `CurrExp` int(11) NOT NULL,
+  `UserId` int(11) NOT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=3 ;
+
+--
+-- 转存表中的数据 `player`
+--
+
+INSERT INTO `player` (`Id`, `Name`, `Level`, `AttMin`, `AttMax`, `Hp`, `ManaMax`, `ManaCurrent`, `Money`, `Alive`, `Point`, `CurrExp`, `UserId`) VALUES
+(1, '蒙多-qulsk', 1, 2, 4, 10, 5, 5, 1, 1, 1, 0, 2),
+(2, '神灵武士-sevfer', 1, 2, 3, 10, 5, 5, 1, 1, 1, 0, 1);
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `user`
+--
+
+CREATE TABLE IF NOT EXISTS `user` (
+  `Id` int(11) NOT NULL AUTO_INCREMENT,
+  `account` char(40) CHARACTER SET gb2312 NOT NULL,
+  `passwd` char(40) CHARACTER SET gb2312 NOT NULL,
+  `type` int(11) NOT NULL,
+  `RoleNumber` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`),
+  KEY `playerId` (`RoleNumber`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=3 ;
+
+--
+-- 转存表中的数据 `user`
+--
+
+INSERT INTO `user` (`Id`, `account`, `passwd`, `type`, `RoleNumber`) VALUES
+(1, 'gm', '123456', 0, 1),
+(2, 'mars', '123456', 1, 1);
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
